@@ -1,0 +1,119 @@
+header { 
+    display: block;
+    background-color:#ADD8E6;
+    padding: .5rem;
+    text-align: center;
+    font-family: 'Concert One', cursive;
+}
+
+.headertext{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.headertext h1{
+    font-size: px;
+}
+
+.subheading{
+    font-size: ;
+    color: ;
+    font-style: italic;
+}
+
+.currentconditions{
+    display:inline-block;
+    vertical-align: middle;
+}
+
+header img{
+    width:150px;
+    height:150px;
+}
+
+body{
+    font-family: 'Cairo', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    padding: 30px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Concert One', cursive;
+}
+.content {
+    max-width: 60%;
+    margin: auto;
+    padding: 10px;
+}
+#top-box{
+    background-image: url("#heroimage");
+    height: 300px;
+    border: 1px solid red;
+}
+
+#weather-sum{
+
+}
+
+#forecast{
+    margin-top:20px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+#town-info{
+    margin-top:20px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+#town-article{
+    margin:5px;
+    height: 190px;
+    width:70%;
+    border: 1px solid blue;
+}
+
+#town-photo{
+    border:1px solid red;
+    float: right;
+    margin:5px; 
+    height: 190px;
+    width: 28%;
+}
+
+#bottom-box{
+    border:1px solid red;
+    margin-top:10px;
+    height: 200px;
+}
+#contact{
+    margin:5px;
+    width:45%;
+    float:right;
+    height: 90%;
+    border:1px solid blue;
+}
+
+#town-map{
+    margin:5px;
+    width: 45%;
+    height: 90%;
+    border:1px solid blue;
+}
+
+footer{
+    border:1px solid red;
+}
+
