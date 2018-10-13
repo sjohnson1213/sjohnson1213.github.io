@@ -67,7 +67,7 @@ h2{
 }
 
 #weather-sum{
-
+    border: 1px solid red;
 }
 
 #forecast{
@@ -119,5 +119,6 @@ h2{
 
 footer{
     border:1px solid red;
+    background-color:#F7C59F;
 }
 
