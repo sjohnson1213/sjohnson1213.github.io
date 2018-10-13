@@ -1,6 +1,6 @@
 header { 
     display: block;
-    background-color:#ADD8E6;
+    background-color:#F7C59F;
     padding: .5rem;
     text-align: center;
     font-family: 'Concert One', cursive;
@@ -12,12 +12,14 @@ header {
 }
 
 .headertext h1{
-    font-size: px;
+    font-size: 18px;
+    font-family: 'Cairo', sans-serif;
+    color: #767b91;
 }
 
 .subheading{
-    font-size: ;
-    color: ;
+    font-size: 16px;
+    color: #767b91;
     font-style: italic;
 }
 
@@ -32,7 +34,7 @@ header img{
 }
 
 body{
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Concert One', cursive;
 }
 
 ul {
@@ -45,11 +47,13 @@ li {
     display: inline;
     padding: 30px;
     text-align: center;
+    color: #767b91;
 }
 
 h2{
     text-align: center;
-    font-family: 'Concert One', cursive;
+    font-family: 'Chakra Petch', sans-serif;
+    color: #767b91;
 }
 .content {
     max-width: 60%;
