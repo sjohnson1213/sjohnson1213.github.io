@@ -60,17 +60,17 @@ h2{
     margin: auto;
     padding: 10px;
 }
-#top-box{
+.top-box{
     background-image: url("#heroimage");
     height: 300px;
     border: 1px solid red;
 }
 
-#weather-sum{
+.weathersummary{
     border: 1px solid red;
 }
 
-#forecast{
+.forecast{
     margin-top:20px;
     height: 100px;
     border: 1px solid red;
