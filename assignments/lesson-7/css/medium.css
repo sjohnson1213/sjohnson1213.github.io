@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1024px) and (min-width: 720px){
         header { 
-        display: block;
+        display: flex;
         background-color:#F7C59F;
         padding: .5rem;
         text-align: center;
@@ -42,6 +42,7 @@
         display:inline-block;
         width:125px;
         height:125px;
+        flex: 1;
     }
     
     body{

@@ -1,6 +1,6 @@
 @media only screen and (min-width: 1024px) {
     header { 
-    display: block;
+    display: flex;
     background-color:#F7C59F;
     padding: .5rem;
     text-align: center;
