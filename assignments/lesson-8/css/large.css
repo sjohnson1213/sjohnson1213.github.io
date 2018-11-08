@@ -1,48 +1,48 @@
 @media only screen and (min-width: 1024px) {
     header { 
-    display: flex;
-    background-color:#F7C59F;
-    padding: .5rem;
-    text-align: center;
-    font-family: 'Concert One', cursive;
-}
-
-.headertext{
-    display: inline-block;
-    vertical-align: middle;
-    padding:2rem;
-}
-
-.headertext h1{
-    font-size: 48px;
-    font-family: 'Cairo', sans-serif;
-    color: #767b91;
-}
-
-.subheading{
-    font-size: 16px;
-    color: #767b91;
-    font-style: italic;
-}
-
-.currentconditions{
-    background-color:#CF9365;
-    display:inline-block;
-    vertical-align: middle;
-    border: 1px solid black;
-    padding:1.5rem;
-}
-
-#currentword{
-    display:inline-block;
-}
-
-header img{
-    vertical-align: middle;
-    display:inline-block;
-    width:125px;
-    height:125px;
-}
+        display: block;
+        background-color:#F7C59F;
+        padding: .5rem;
+        text-align: center;
+        font-family: 'Concert One', cursive;
+    }
+    
+    .headertext{
+        display: inline-block;
+        vertical-align: middle;
+        padding:2rem;
+    }
+    
+    .headertext h1{
+        font-size: 48px;
+        font-family: 'Cairo', sans-serif;
+        color: #767b91;
+    }
+    
+    .subheading{
+        font-size: 16px;
+        color: #767b91;
+        font-style: italic;
+    }
+    
+    .currentconditions{
+        background-color:#CF9365;
+        display:inline-block;
+        vertical-align: middle;
+        border: 1px solid black;
+        padding:1.5rem;
+    }
+    
+    #currentword{
+        display:inline-block;
+    }
+    
+    header img{
+        vertical-align: middle;
+        display:inline-block;
+        width:125px;
+        height:125px;
+    }
 
 body{
     font-family: 'Concert One', cursive;
@@ -194,7 +194,7 @@ footer{
 }
 
 #return_button{
-    background-color: pink;
+    background-color: #FFDFC7;
 }
 
 form {

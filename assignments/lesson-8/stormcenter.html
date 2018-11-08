@@ -63,10 +63,10 @@
         <h3>Report a storm here!</h3>
        
         <!-- Storm Center Form-->
-        <form action="/thanks.html" method="get">
+        <form action="thanks.html" method="get" id="storminfo">
             <div class="row">
                 <div class="column" style="vertical-align: middle">
-            Full Name:<input type="text" name="fullname" pattern="[A-Za-z]{5,}" required><br><br>
+            Full Name:<input type="text" name="fullname" pattern="[A-Za-z ]{5,}" required><br><br>
             Email:<input type="email" name="email" placeholder="abc123@hotmail.com"><br><br>
             Phone Number:<input type="tel" name="phonenum" required><br><br>
             Zip Code:<input type="number" name="zip" required><br><br>
@@ -97,7 +97,7 @@
             <input type="radio" name="danger" id="maybe" value="maybe">
             <label for="no">No</label>
             <input type="radio" name="danger" id="no" value="no"><br><br>
-            Additional Information:<br><textarea rows="5" cols="60"></textarea><br><br>
+            Additional Information:<br><textarea></textarea><br><br>
             <button type="submit" form="storminfo" value="Submit">Submit</button>
         </div>
         </div>
