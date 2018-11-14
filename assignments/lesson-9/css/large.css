@@ -237,7 +237,8 @@ h3{
 }
 
 .data_cols{
-    
+    width: 33%;
+    padding: .25rem;
 }
 }
 
