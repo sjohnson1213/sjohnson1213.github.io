@@ -5,6 +5,7 @@
 <meta name="description" content="Fill Me In">
 <meta name="author" content="John Doe">
 <script src="js/hamburger.js"></script>
+<script src="js/scripts.js"></script>
 <!-- This start file was build by Paul Cheney  -->
 <title>Preston</title>
 
@@ -47,12 +48,12 @@
     <nav>
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="navbar" class="hide">
-            <li class="active"><a href="../lesson-9/index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li class="active"><a href="preston.html">Preston</a></li>
             <li class="active"><a href="#soda">Soda Springs</a></li>
             <li class="active"><a href="#fish">Fish Haven</a></li>
             <li class="active"><a href="../lesson-8/stormcenter.html">Storm Center</a></li>
-            <li class="active"><a href="gallery.html">Gallery</a></li>            
+            <li class="active"><a href="../lesson-8/gallery.html">Gallery</a></li>            
         </ul>
     </nav>
     
@@ -65,15 +66,15 @@
               <h3>Weather Summary</h3>
               <div class="weatherdetails">
                 <p class="label">Currently:</p>
-                <p class="value">Sunny</p><br>
+                <p class="value"><span id="current"></span></p><br>
                 <p class="label">Temperature:</p>
-                <p class="value" id="temp">76 &deg;F</p><br>
+                <p class="value"><span id="temp_current"></span>&deg;F</p><br>
                 <p class="label">Humidity:</p>
-                <p class="value">69%</p><br>
+                <p class="value"><span id="humid"></span>%</p><br>
                 <p class="label">Precipitation:</p>
-                <p class="value">0 inches</p><br>
+                <p class="value"><span id="precip"></span> inches</p><br>
                 <p class="label">Wind Speed:</p>
-                <p class="value" id="wind_speed">5 mph</p><br>
+                <p class="value"><span id="wind_speed"></span>mph</p><br>
                 <p class="label">Wind Chill:</p>
                 <p class="value" id="wind_chill"><script src="js/windchill.js"></script>&deg;</p>
               </div>
@@ -95,11 +96,11 @@
               <tbody>
                 <tr>
                   <th>Forecast</th>
-                  <td>89&deg;F</td>
-                  <td>87&deg;F</td>
-                  <td>78&deg;F</td>
-                  <td>75&deg;F</td>
-                  <td>72&deg;F</td>
+                  <td><span id="wed_weather"></span>&deg;F</td>
+                  <td id="thurs_weather">&deg;F</td>
+                  <td id="fri_weather">&deg;F</td>
+                  <td id="sat_weather">&deg;F</td>
+                  <td id="sun_weather">&deg;F</td>
                 </tr>
               </tbody>
             </table>
