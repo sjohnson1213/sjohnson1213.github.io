@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fish Haven website page">
+<meta name="author" content="Serene Matheson">
+<script src="js/hamburger.js"></script>
+<script src="js/scripts.js"></script>
+
+<title>Fish Haven</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header>
+        <img src="images/weather-icon.png" alt="Logo">
+        <div class="headertext">
+            <h1>Wise Weather Man</h1> 
+            <div class="subheading">
+                Keeping you up to date with all the weather needs        
+            </div>             
+        </div>
+        <div class="currentconditions">
+            <img id="currentimage" src="images/sunny.png" alt="Current condition weather icon">
+            <p id="currentword">Sunny</p>
+        </div>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="navbar" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><a href="preston.html">Preston</a></li>
+            <li class="active"><a href="sodasprings.html">Soda Springs</a></li>
+            <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
+            <li class="active"><a href="../lesson-8/stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="../lesson-8/gallery.html">Gallery</a></li>            
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main class="content">
+        <h2>The Town of Fish Haven</h2>
+        <div class="top-box">
+            <section class="weathersummary">
+              <h3>Weather Summary</h3>
+              <div class="weatherdetails">
+                <p class="label">Currently:</p>
+                <p class="value"><span id="current"></span></p><br>
+                <p class="label">Temperature:</p>
+                <p class="value"><span id="temp_current"></span>&deg;F</p><br>
+                <p class="label">Humidity:</p>
+                <p class="value"><span id="humid"></span>%</p><br>
+                <p class="label">Precipitation:</p>
+                <p class="value"><span id="precip"></span> inches</p><br>
+                <p class="label">Wind Speed:</p>
+                <p class="value"><span id="wind_speed"></span>mph</p><br>
+                <p class="label">Wind Chill:</p>
+                <p class="value" id="wind_chill"><script src="js/windchill.js"></script>&deg;</p>
+              </div>
+            </section>
+          </div>
+          <section class="forecast">
+            <h3>5 Day Forecast</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Wed</th>
+                  <th>Thu</th>
+                  <th>Fri</th>
+                  <th>Sat</th>
+                  <th>Sun</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Forecast</th>
+                  <td><span id="wed_weather"></span>&deg;F</td>
+                  <td id="thurs_weather">&deg;F</td>
+                  <td id="fri_weather">&deg;F</td>
+                  <td id="sat_weather">&deg;F</td>
+                  <td id="sun_weather">&deg;F</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        <div class="town-info">
+            <img src="images/town-image.jpeg" alt="Town Photo" id="town-photo">
+            <p id="town-article">
+                Climate Understanding<br>
+                By Jessie Rein<br><br>
+                Residents of Preston participated in the worldwide “Rise For Climate” 
+                rally Saturday to demand a fossil free world and inspire real climate 
+                action from local leaders.<br>
+                Participants kicked off the rally by meeting 
+                at the Sun Pavilion at St. Luke’s Episcopal Church to create signs. The 
+                signs that were created read phrases such as “There is no PLANet-B,” “Small
+                Town, Big Change” and “If The Climate is Changing, Why Aren’t We?” After 
+                creating signs, participants made their way to the four corners in front of 
+                Grace Lutheran Church, Daniel Boone Inn and Earthfare. The contributors 
+                dispersed amongst the four corners holding their creations as an attempt to 
+                gain attention from all points of view.
+            </p>
+        </div>
+        <div id="bottom-box">
+            <p id="contact">
+                The Wise Weatherman<br>
+                1234 Stormy Way<br>
+                Preston, ID 83263<br><br>
+                123-456-7891<br>
+                wiseweather@wws.net
+            </p>                
+            <img src="images/map.png" alt="Town Map" id="town-map">
+        </div>
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        <p>&copy;2018 Serene Matheson Terms of Use</p>
+        <script src="js/currentdate.js"></script>
+    </footer>
+
+</body>
+</html>
