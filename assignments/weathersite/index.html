@@ -82,13 +82,13 @@
                 for (var i = 0; i < town_data.length; i++) {
                     var myArticle = document.createElement('article');
                     var myH1 = document.createElement('h1');
-                    var myH2 = document.createElement('h2');
+                    var myH4 = document.createElement('h4');
                     var myPara1 = document.createElement('p');
                     var myPara2 = document.createElement('p');
                     var myPara3 = document.createElement('p');
 
                     myH1.textContent = town_data[i].name;
-                    myH2.textContent = town_data[i].motto;
+                    myH4.textContent = town_data[i].motto;
                     myPara1.textContent = 'Year Founded: ' + town_data[i].yearFounded;
                     myPara2.textContent = 'Population: ' + town_data[i].currentPopulation;
                     myPara3.textContent = 'Annual Rainfall:' + town_data[i].averageRainfall;
