@@ -72,41 +72,36 @@
             request.open('GET', requestURL);    
             request.responseType = 'json';
             request.send();
-        
             request.onload = function() {
-                var TownData = request.response;
-                showData(TownData);
+                var townData = request.response;
+                populateTownData(townData);
             }
-        
-        
-            function showData(jsonObj) {
-            var townNames = jsonObj['towns'];
-              
-          for (var i = 0; i < townNames.length; i++) {
-            var myArticle = document.createElement('article');
-            var myH2 = document.createElement('h2');
-            var myPara1 = document.createElement('p');
-            var myPara2 = document.createElement('p');
-            var myPara3 = document.createElement('p');
-            var myPara4 = document.createElement('p');
-        
-            myH2.textContent = townNames[i].name;
-            myPara1.textContent = townNames[i].motto;
-            myPara2.textContent = 'Year Founded: ' + townNames[i].yearFounded;
-            myPara3.textContent = 'Population:' + townNames[i].currentPopulation;
-            myPara4.textContent = 'Annual Rainfall:' + townNames[i].averageRainfall;
 
+            function populateTownData(jsonObj) {
+                var town_data = jsonObj['towns'];
+                for (var i = 0; i < town_data.length; i++) {
+                    var myArticle = document.createElement('article');
+                    var myH1 = document.createElement('h1');
+                    var myH2 = document.createElement('h2');
+                    var myPara1 = document.createElement('p');
+                    var myPara2 = document.createElement('p');
+                    var myPara3 = document.createElement('p');
+
+                    myH1.textContent = town_data[i].name;
+                    myH2.textContent = town_data[i].motto;
+                    myPara1.textContent = 'Year Founded: ' + town_data.events.yearFounded;
+                    myPara2.textContent = 'Population: ' + town_data[i].currentPopulation;
+                    myPara3.textContent = 'Annual Rainfall:' + town_data[i].averageRainfall;
+                   
+                    myArticle.appendChild(myH1);
+                    myArticle.appendChild(myH2);
+                    myArticle.appendChild(myPara1);
+                    myArticle.appendChild(myPara2);
+                    myArticle.appendChild(myPara3);
+
+    section.appendChild(myArticle);
+                }
             }
-        
-            myArticle.appendChild(myH2);
-            myArticle.appendChild(myPara1);
-            myArticle.appendChild(myPara2);
-            myArticle.appendChild(myPara3);
-            myArticle.appendChild(myPara4);
-        
-            section.appendChild(myArticle);
-        }
-        
         </script>
     </main>
     
