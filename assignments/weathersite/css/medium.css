@@ -234,7 +234,12 @@
 
     }
 
-    .data_cols{
-        
-    }
+    section article {
+        width: 33%;
+        float: left;
+      }
+      
+      section p {
+        margin: 5px 0;
+      }
 }
