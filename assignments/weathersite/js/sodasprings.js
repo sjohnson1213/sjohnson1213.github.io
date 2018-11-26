@@ -1,5 +1,5 @@
 var weatherRequest = new XMLHttpRequest();
-weatherRequest.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=Soda Springs,us&appid=d38cd92ae4bb42dbcdc2b72b5f197e7c&units=imperial', true);
+weatherRequest.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=Soda Springs,us&appid=d38cd92ae4bb42dbcdc2b72b5f197e7c&units=imperial', true);
 
 weatherRequest.send();
 weatherRequest.onload=function(){
@@ -14,7 +14,7 @@ weatherRequest.onload=function(){
     document.getElementById('currentword').innerHTML = weatherData.weather[0].main;
 
     var iconcode = weatherData.weather[0].icon;
-    var icon_path = "http://openweathermap.org/img/w/" + iconcode + ".png";
+    var icon_path = "https://openweathermap.org/img/w/" + iconcode + ".png";
     document.getElementById('currentimage').src = icon_path;
 
     document.getElementById('wed_weather').innerHTML = weatherData.main.temp_max;
