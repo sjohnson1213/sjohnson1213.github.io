@@ -85,13 +85,12 @@
                     var myPara1 = document.createElement('p');
                     var myPara2 = document.createElement('p');
                     var myPara3 = document.createElement('p');
-                    if (town_data.name === "Preston" || town_data.name === "Fish Haven" || town_data.name === "Soda Springs") {   
+
                     myH1.textContent = town_data[i].name;
                     myH2.textContent = town_data[i].motto;
                     myPara1.textContent = 'Year Founded: ' + town_data.events.yearFounded;
                     myPara2.textContent = 'Population: ' + town_data[i].currentPopulation;
                     myPara3.textContent = 'Annual Rainfall:' + town_data[i].averageRainfall;
-                    }
                    
                     myArticle.appendChild(myH1);
                     myArticle.appendChild(myH2);
