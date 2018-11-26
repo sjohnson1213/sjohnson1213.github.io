@@ -80,6 +80,7 @@
             function populateTownData(jsonObj) {
                 var town_data = jsonObj['towns'];
                 for (var i = 0; i < town_data.length; i++) {
+                    if(town_data[i].name == "Preston" || town_data[i].name == "Fish Haven" || town_data[i].name == "Soda Springs"){
                     var myArticle = document.createElement('article');
                     var myH1 = document.createElement('h1');
                     var myH4 = document.createElement('h4');
@@ -99,7 +100,8 @@
                     myArticle.appendChild(myPara2);
                     myArticle.appendChild(myPara3);
 
-    section.appendChild(myArticle);
+                    section.appendChild(myArticle);
+                    }
                 }
             }
         </script>
