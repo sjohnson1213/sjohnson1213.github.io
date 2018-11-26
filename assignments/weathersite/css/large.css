@@ -236,9 +236,13 @@ h3{
 
 }
 
-.data_cols{
+section article {
     width: 33%;
-    padding: .25rem;
-}
+    float: left;
+  }
+  
+  section p {
+    margin: 5px 0;
+  }
 }
 
