@@ -1,5 +1,5 @@
 var weatherRequest = new XMLHttpRequest();
-weatherRequest.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=FishHaven,us&appid=d38cd92ae4bb42dbcdc2b72b5f197e7c&units=imperial', true);
+weatherRequest.open('GET', 'api.openweathermap.org/data/2.5/weather?q=FishHaven,us&appid=d38cd92ae4bb42dbcdc2b72b5f197e7c&units=imperial', true);
 
 weatherRequest.send();
 weatherRequest.onload=function(){
