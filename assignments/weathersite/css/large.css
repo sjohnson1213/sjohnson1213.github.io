@@ -163,6 +163,7 @@ footer{
     height:75px;
     max-width: 70%;
     background-color:#F7C59F;
+    margin-top:.2rem;
     margin-right:auto;
     margin-left:auto;
     text-align:center;
@@ -234,6 +235,10 @@ h3{
 
 #story{
 
+}
+
+section{
+    align-content: center;
 }
 
 section article {
