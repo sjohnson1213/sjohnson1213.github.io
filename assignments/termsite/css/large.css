@@ -38,6 +38,11 @@ h2 {
     text-align: center;
 }
 
+form{
+    align-content: center;
+    text-align:center;
+}
+
 nav{
     font-family: 'Arvo', serif;
     padding: 1rem;
