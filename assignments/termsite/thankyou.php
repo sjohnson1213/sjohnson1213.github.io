@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Temple Inn and Suites Contact Page">
+<meta name="description" content="Temple Inn and Suites Home Page">
 <meta name="author" content="Serene Matheson">
 
-<title>Contact Us</title>
+<title>Temple Inn and Suites</title>
 
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -40,10 +40,9 @@
         <div class="overlay">
             <h1>Temple Inn and Suites</h1>
         </div>
-    </header>
+</header>
     
-    
-<!-- NAVIGATION HERE -->
+    <!-- NAVIGATION HERE -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -53,28 +52,18 @@
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
     </nav>
-    
-    
-<!-- CONTENT HERE -->
+    <!-- CONTENT HERE -->
     <main>
-        <h2>Contact Us</h2>
-
-        <form action="/thankyou.php">
-            Name: <input type="text" name="fullname" placeholder="John Doe">
-            Phone Number:<input type="tel" name="phone" placeholder="123-456-7891">
-            Email Address:<input type="email" name="email" placeholder="johndoe123@gmail.com">
-            Message:<textarea name="message" rows="25" cols="50"></textarea>
-            <input type="submit" value="Submit">
-        </form> 
+    <h2>Thanks for contacting us!<br>We'll respond within 1-2 business days</h2>
     </main>
     
-<!-- FOOTER HERE -->   
-    <footer>
-        <p>&copy;2018 Serene Matheson&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <script src="js/currentdate.js"></script>    
-            <a href="resources.html" style="padding:1.5rem;">Resources</a>
-        </p>
-    </footer>
-
-</body>
-</html>
+    <!-- FOOTER HERE -->   
+        <footer>
+            <p>&copy;2018 Serene Matheson&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <script src="js/currentdate.js"></script>    
+                <a href="resources.html" style="padding:1.5rem;">Resources</a>
+            </p>
+        </footer>
+    
+    </body>
+    </html>
